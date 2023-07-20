@@ -1,3 +1,4 @@
+<video src="%E4%BC%98%E5%8C%96%EF%BC%9AGPU%E5%8A%A8%E7%94%BB.mp4" controls title="Title"></video>
 介绍：
 Animator动画是在CPU上计算骨骼，unity的GPU蒙皮有硬件限制需要Transform feekback效率不好在低端机下跑不起来，这套方案将骨骼计算和转移到GPU。
 实现一个批次渲染几百个动画单位。集成了：动画剔除，gpu instance的支持。

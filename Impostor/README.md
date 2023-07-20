@@ -1,3 +1,4 @@
+<video src="%E5%85%A8%E7%83%98%E7%84%99impostor%E6%8B%8D%E7%89%87%E4%BD%BF%E7%94%A8.mp4" controls title="Title"></video>
 # 介绍：
 在物件空间半八面体视角给物件拍照，渲染信息烘焙在图片上并使用面片billbord渲染。对比市面上烘焙材质信息,在shader里做shading的方案贴图量省1/4 shader开销大大降低。该方案可以大大降低几何带宽和渲染开销。
 使用场景：结构复杂高面数的小物件
