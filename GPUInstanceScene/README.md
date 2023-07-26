@@ -1,3 +1,5 @@
+# 简介 
+  使用DrawMeshInstanced + MaterialPropertyBlock兼顾兼容性和性能的GPUInstance方案，硬件支持的话可以使用DrawMeshInstancedIndirect + ComputeBuffer
 
 ![](GPUInstanceCullingbyJob.gif)
 # 介绍：
