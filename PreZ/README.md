@@ -1,3 +1,4 @@
+# 管线PreZ
 ![](0.png)
 # 介绍
 场景上不能严格排序 一旦EarlyZ被打断 Shading的消耗非常高,  PASS1:先渲染场景深度图，PASS2:hading阶段深度相等才绘制，Shading阶段不需要Alpha Test，配合ealy-z可以在片元阶段之前做剔除。除了场景材质排序打破Early-Z 还有一种情况early-Z无法做到像素级的优化，这种情况也非常常见场景里大量的mesh插到地表以下。

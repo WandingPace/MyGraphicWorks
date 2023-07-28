@@ -1,3 +1,4 @@
+# shader管理
 ![](1.png)
 # 简介
 ShaderManage是一个Unity Shader变体管理工具，用于管理Shader变体，包括剔除和收集。
