@@ -1,7 +1,8 @@
 # 管线PreZ
 ![](0.png)
 # 介绍
-场景上不能严格排序 一旦EarlyZ被打断 Shading的消耗非常高,  PASS1:先渲染场景深度图，PASS2:hading阶段深度相等才绘制，Shading阶段不需要Alpha Test，配合ealy-z可以在片元阶段之前做剔除。除了场景材质排序打破Early-Z 还有一种情况early-Z无法做到像素级的优化，这种情况也非常常见场景里大量的mesh插到地表以下。
+这个技术应用前提是移动设备不是所有机型都支持HSR,或类似Mali FPK的技术；
+一旦EarlyZ被打断（修改z-buffer的操作(discard/clip指令或有ZOffset)会打断 early-z） Shading的消耗非常高,  PASS1:先渲染场景深度图，PASS2:shading阶段深度相等才绘制，Shading阶段不需要Alpha Test，配合ealy-z可以在片元阶段之前做剔除。除了场景材质排序打破Early-Z 还有一种情况early-Z无法做到像素级的优化，这种情况也非常常见（eg:场景里大量的mesh插到地表以下；两个石块交叉）。如图：
 ![](1.png)
 # 对比
 在我们项目里加上preZ后， GPU cycle数从8540025降到6717825,原来500s内发热掉帧到2个小时不掉帧。
