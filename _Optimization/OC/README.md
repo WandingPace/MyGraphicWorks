@@ -8,10 +8,13 @@
 
 ### SOC （done）
 [[SOC/README]](/_Optimization/OC/SOC/)
+
 数据结构
 ![Alt text](image.png)
+
 流程
 ![Alt text](image-1.png)
+
     pros：软光栅的方法生成遮挡信息，可以兼容低端机
     cons：需要预处理指定occluder，occludee。不稳定的CPU消耗
 
