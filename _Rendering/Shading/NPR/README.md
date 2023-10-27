@@ -12,4 +12,5 @@
     RampMap
     MatCap
 - 其他细节问题处理
-头发渲染相关问题 [[Hair/README]]
+头发渲染相关问题 
+- [[Hair/README]](/_Rendering/NPR/Hair/)
