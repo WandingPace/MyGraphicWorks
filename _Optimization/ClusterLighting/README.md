@@ -1,5 +1,5 @@
 # ClusterLighting
-## 成果（小米9录屏）1024盏光源PBR渲染
+## 成果（小米9录屏）1024盏光源PBR渲染稳定60FPS
 <video src="Screenrecorder-2023-10-27-17-29-10-786.mp4" controls title="Title"></video>
 
 ## 流程图

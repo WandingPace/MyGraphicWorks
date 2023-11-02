@@ -7,7 +7,7 @@
 ![](GPUInstaceDynamic&ECS.gif)
 
 ## 特性
-- 距离+触发器管理加卸载
+- 八叉树场景管理
 - gpu instancing
 - support LOD
 - v1: CullingGroup + FrustumJob执行剔除
